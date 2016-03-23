@@ -13,12 +13,14 @@ Simple wrapper for Google Translate (REST) API. Includes a Laravel 5 Service Pro
 Via Composer
 
 ``` bash
-$ composer require Jcorry/gootranslate
+$ composer require jcorry/gootranslate
 ```
 Or
+    ```
     require : {
-        "Jcorry/gootranslate": "dev-master"
+        "jcorry/gootranslate": "dev-master"
     }
+    ```
     
 Add your Google API key to .env
     
@@ -43,7 +45,19 @@ List available languages...
     
 Translate
 
-    GooTranslate::translate('Here is a string to translate', 'es');
+    GooTranslate::translate('Here is a string to translate', 'zu');
+    
+Results in...
+
+    ```
+    [
+     {#644
+       +"translatedText": "Nasi string ukuhumusha",
+       +"detectedSourceLanguage": "en",
+     },
+   ]
+   ```
+
 
 ## Change log
 
@@ -61,7 +75,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) and [CONDUCT](CONDUCT.md) for details
 
 ## Security
 
-If you discover any security related issues, please email Jcorry@gmail.com instead of using the issue tracker.
+If you discover any security related issues, please email jcorry@gmail.com instead of using the issue tracker.
 
 ## Credits
 
