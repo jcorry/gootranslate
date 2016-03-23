@@ -74,14 +74,18 @@ class GooTranslateClass implements GooTranslateServiceContract
         return $response;
     }
 
-    public function setSrcLanguage($lang)
+    public function src($lang)
     {
+        $this->source = $lang;
 
+        return $this;
     }
 
-    public function setTarget($lang = 'en')
+    public function target($lang = 'en')
     {
         $this->target = $lang;
+
+        return $this;
     }
 
 
