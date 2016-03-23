@@ -1,18 +1,18 @@
 {
-    "name": "jcorry/gootranslate",
+    "name": "Jcorry/gootranslate",
     "type": "library",
     "description": "Simple API wrapper for Google Translate (REST) API",
     "keywords": [
-        "jcorry",
+        "Jcorry",
         "GooTranslate"
     ],
-    "homepage": "https://github.com/jcorry/GooTranslate",
+    "homepage": "https://github.com/Jcorry/GooTranslate",
     "license": "MIT",
     "authors": [
         {
             "name": "John Corry",
-            "email": "jcorry@gmail.com",
-            "homepage": "https://github.com/jcorry",
+            "email": "Jcorry@gmail.com",
+            "homepage": "https://github.com/Jcorry",
             "role": "Developer"
         }
     ],

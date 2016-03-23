@@ -1,12 +1,12 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: jcorry
+ * User: Jcorry
  * Date: 3/23/16
  * Time: 10:04 AM
  */
 
-namespace jcorry\GooTranslate;
+namespace Jcorry\GooTranslate;
 
 
 interface GooTranslateServiceContract

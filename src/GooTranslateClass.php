@@ -1,5 +1,5 @@
 <?php
-namespace jcorry\GooTranslate;
+namespace Jcorry\GooTranslate;
 
 class GooTranslateClass implements GooTranslateServiceContract
 {

@@ -13,11 +13,11 @@ Simple wrapper for Google Translate (REST) API. Includes a Laravel 5 Service Pro
 Via Composer
 
 ``` bash
-$ composer require jcorry/gootranslate
+$ composer require Jcorry/gootranslate
 ```
 Or
     require : {
-        "jcorry/gootranslate": "dev-master"
+        "Jcorry/gootranslate": "dev-master"
     }
     
 Add your Google API key to .env
@@ -33,7 +33,7 @@ Optional (recommended)
 
 Add alias to app/config/app.php to use facade
 
-    'GooTranslate' => jcorry\GooTranslate\GooTranslateFacade::class
+    'GooTranslate' => Jcorry\GooTranslate\GooTranslateFacade::class
 
 ## Usage
 
@@ -61,7 +61,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) and [CONDUCT](CONDUCT.md) for details
 
 ## Security
 
-If you discover any security related issues, please email jcorry@gmail.com instead of using the issue tracker.
+If you discover any security related issues, please email Jcorry@gmail.com instead of using the issue tracker.
 
 ## Credits
 
@@ -72,17 +72,17 @@ If you discover any security related issues, please email jcorry@gmail.com inste
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/jcorry/GooTranslate.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/Jcorry/GooTranslate.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/jcorry/GooTranslate/master.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/jcorry/GooTranslate.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/jcorry/GooTranslate.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/jcorry/GooTranslate.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/Jcorry/GooTranslate/master.svg?style=flat-square
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/Jcorry/GooTranslate.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/scrutinizer/g/Jcorry/GooTranslate.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/Jcorry/GooTranslate.svg?style=flat-square
 
-[link-packagist]: https://packagist.org/packages/jcorry/GooTranslate
-[link-travis]: https://travis-ci.org/jcorry/GooTranslate
-[link-scrutinizer]: https://scrutinizer-ci.com/g/jcorry/GooTranslate/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/jcorry/GooTranslate
-[link-downloads]: https://packagist.org/packages/jcorry/GooTranslate
+[link-packagist]: https://packagist.org/packages/Jcorry/GooTranslate
+[link-travis]: https://travis-ci.org/Jcorry/GooTranslate
+[link-scrutinizer]: https://scrutinizer-ci.com/g/Jcorry/GooTranslate/code-structure
+[link-code-quality]: https://scrutinizer-ci.com/g/Jcorry/GooTranslate
+[link-downloads]: https://packagist.org/packages/Jcorry/GooTranslate
 [link-author]: https://github.com/:author_username
 [link-contributors]: ../../contributors

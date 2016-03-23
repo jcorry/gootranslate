@@ -1,6 +1,6 @@
 <?php
 
-namespace jcorry\GooTranslate;
+namespace Jcorry\GooTranslate;
 
 use GuzzleHttp\Handler\CurlHandler;
 use GuzzleHttp\HandlerStack;
@@ -35,7 +35,7 @@ class GooTranslateServiceProvider extends ServiceProvider
         ]);
 
         //
-        $this->app->singleton('jcorry\GooTranslate\Translator', function($app) use ($client) {
+        $this->app->singleton('Jcorry\GooTranslate\Translator', function($app) use ($client) {
             return new GooTranslateClass($client);
         });
     }
