@@ -43,7 +43,7 @@ List available languages...
     
 Translate
 
-    GooTranslate::translate('
+    GooTranslate::translate('Here is a string to translate', 'es');
 
 ## Change log
 

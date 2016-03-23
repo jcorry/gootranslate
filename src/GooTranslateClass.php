@@ -30,9 +30,13 @@ class GooTranslateClass implements GooTranslateServiceContract
     /**
      * @param $string
      */
-    public function translate($string)
+    public function translate($string, $target = null)
     {
         try {
+            if($target) {
+                $this->target($target);
+            }
+
             $response = $this->client->get('', ['query' => array_merge($this->client->getConfig('query'), ['q' => $string, 'target' => $this->target])]);
 
             $data = json_decode($response->getBody()->getContents());
