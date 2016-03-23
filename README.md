@@ -51,12 +51,11 @@ Results in...
 
     ```
     [
-     {#644
-       +"translatedText": "Nasi string ukuhumusha",
-       +"detectedSourceLanguage": "en",
-     },
-   ]
-   ```
+        {#644
+            +"translatedText": "Nasi string ukuhumusha",
+            +"detectedSourceLanguage": "en",
+        },
+    ]
 
 
 ## Change log

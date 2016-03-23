@@ -9,7 +9,7 @@ class GooTranslateClass implements GooTranslateServiceContract
     public function __construct(\GuzzleHttp\ClientInterface $client)
     {
         $this->client = $client;
-        $this->setTarget('en');
+        $this->target('en');
     }
 
     public function languages()
