@@ -1,7 +1,7 @@
 {
     "name": "jcorry/gootranslate",
     "type": "library",
-    "description": ":package_description",
+    "description": "Simple API wrapper for Google Translate (REST) API",
     "keywords": [
         "jcorry",
         "GooTranslate"
