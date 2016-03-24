@@ -4,7 +4,10 @@
     "description": "Simple API wrapper for Google Translate (REST) API",
     "keywords": [
         "Jcorry",
-        "GooTranslate"
+        "GooTranslate",
+        "Translation",
+        "Languages"
+
     ],
     "homepage": "https://github.com/Jcorry/GooTranslate",
     "license": "DBAD",
