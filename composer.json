@@ -1,0 +1,50 @@
+{
+    "name": "Jcorry/gootranslate",
+    "type": "library",
+    "description": "Simple API wrapper for Google Translate (REST) API",
+    "keywords": [
+        "Jcorry",
+        "GooTranslate",
+        "Translation",
+        "Languages"
+    ],
+    "homepage": "https://github.com/Jcorry/GooTranslate",
+    "license": "DBAD",
+    "authors": [
+        {
+            "name": "John Corry",
+            "email": "jcorry@gmail.com",
+            "homepage": "https://github.com/Jcorry",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "illuminate/support": "~5.1",
+        "php" : "~5.5|~7.0",
+        "guzzlehttp/guzzle" : "~6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "4.*",
+        "scrutinizer/ocular": "~1.1",
+        "squizlabs/php_codesniffer": "~2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jcorry\\GooTranslate\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jcorry\\GooTranslate\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "minimum-stability" : "stable"
+}
