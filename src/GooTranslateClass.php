@@ -3,19 +3,14 @@ namespace Jcorry\GooTranslate;
 
 class GooTranslateClass implements GooTranslateServiceContract
 {
-<<<<<<< HEAD
 
-    private $client;
-
-    public function __construct(\GuzzleHttp\ClientInterface $client)
-=======
     /**
      * @var \GuzzleHttp\Client
      */
     private $client;
 
     public function __construct(\GuzzleHttp\Client $client)
->>>>>>> repo-set-up
+
     {
         $this->client = $client;
         $this->target('en');
@@ -38,10 +33,7 @@ class GooTranslateClass implements GooTranslateServiceContract
 
     /**
      * @param $string
-<<<<<<< HEAD
-=======
      * @return string
->>>>>>> repo-set-up
      */
     public function translate($string, $target = null)
     {
