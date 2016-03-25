@@ -24,5 +24,4 @@ before_script:
     - cd ./vendor/jcorry/gootranslate
 
 script:
-    - phpunit
-    - ./vendor/bin/peridot ./tests
+    - ../bin/peridot ./tests
