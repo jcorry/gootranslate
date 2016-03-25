@@ -3,6 +3,11 @@ language: php
 php: 
     - '5.6'
 
+env:
+  global:
+    - setup=basic
+    - coverage=no
+
 before_install:
     - composer self-update
 
