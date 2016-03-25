@@ -21,7 +21,7 @@ before_script:
     - cp .env.example .env
     - export APP_ENV=testing
     - export GOOGLE_API_KEY=XNj7t5upbFIqNSaS0de480YWckGb7136
-    - cd ./vendor/jcorry/gootranslate
 
 script:
-    - ../bin/peridot ./tests
+    - phpunit -filter ./vendor/jcorry/gootranslate/tests
+    - ./bin/peridot ./vendor/jcorry/gootranslate/tests
