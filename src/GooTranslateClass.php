@@ -4,9 +4,13 @@ namespace Jcorry\GooTranslate;
 class GooTranslateClass implements GooTranslateServiceContract
 {
 
+    /**
+     * @var \GuzzleHttp\Client
+     */
     private $client;
 
-    public function __construct(\GuzzleHttp\ClientInterface $client)
+    public function __construct(\GuzzleHttp\Client $client)
+
     {
         $this->client = $client;
         $this->target('en');
@@ -29,6 +33,7 @@ class GooTranslateClass implements GooTranslateServiceContract
 
     /**
      * @param $string
+     * @return string
      */
     public function translate($string, $target = null)
     {
