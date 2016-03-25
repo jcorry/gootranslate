@@ -12,7 +12,7 @@ before_install:
     - composer self-update
 
 install:
-    - composer create-project laravel/laravel
+    - composer create-project laravel/laravel --dev
     - cd ./laravel
     - composer require jcorry/gootranslate:dev-master --dev
     - composer update --dev
