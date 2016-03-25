@@ -23,5 +23,5 @@ before_script:
     - export GOOGLE_API_KEY=XNj7t5upbFIqNSaS0de480YWckGb7136
 
 script:
-    - phpunit -filter ./vendor/jcorry/gootranslate/tests
-    - ./bin/peridot ./vendor/jcorry/gootranslate/tests
+    - phpunit --filter ./vendor/jcorry/gootranslate/tests
+    - ./vendor/bin/peridot ./vendor/jcorry/gootranslate/tests
