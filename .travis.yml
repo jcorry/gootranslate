@@ -14,7 +14,7 @@ before_install:
 install:
     - composer create-project laravel/laravel
     - cd ./laravel
-    - composer require jcorry/gootranslate:dev-master
+    - composer require-dev jcorry/gootranslate:dev-master
     - composer update
 
 before_script:
