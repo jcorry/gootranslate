@@ -12,16 +12,15 @@ before_install:
     - composer self-update
 
 install:
-    - composer create-project laravel/laravel laravel "5.1.*"
+    - composer create-project laravel/laravel:5.1.11
     - cd ./laravel
     - composer require peridot-php/peridot
     - composer require peridot-php/leo
     - composer require phpspec/phpspec
     - composer require peridot-php/peridot-watcher-plugin
-    - composer require jcorry/gootranslate:dev-master --dev
+    - composer require jcorry/gootranslate:dev-master
 
 before_script:
-    - cp .env.example .env
     - export APP_ENV=testing
     - export GOOGLE_API_KEY=XNj7t5upbFIqNSaS0de480YWckGb7136
 
