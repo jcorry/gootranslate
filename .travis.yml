@@ -12,7 +12,8 @@ before_install:
     - composer self-update
 
 install:
-    - composer create-project laravel/laravel:5.1.4
+    - touch composer.lock
+    - composer require laravel/laravel:5.1.11 ./laravel
     - cd ./laravel
     - composer require peridot-php/peridot
     - composer require peridot-php/leo
