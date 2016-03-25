@@ -3,12 +3,21 @@ language: php
 php: 
     - '5.6'
 
+before_install:
+    - sudo composer self-update
+
 install:
-    - composer install
+    - composer create-project laravel/laravel
+    - cd ./laravel
+    - composer require jcorry/gootranslate:dev-master
+    - composer update
+
+before_script:
+    - cp .env.example .env
+    - export APP_ENV=testing
+    - export GOOGLE_API_KEY=XNj7t5upbFIqNSaS0de480YWckGb7136
+    - cd ./vendor/jcorry/gootranslate
 
 script:
     - phpunit
     - ./vendor/bin/peridot ./tests
-
-env:
-    - GOOGLE_API_KEY=XNj7t5upbFIqNSaS0de480YWckGb7136
