@@ -1,14 +1,20 @@
 <?php
 namespace Jcorry\GooTranslate;
 
+use Illuminate\Cache\CacheManager as CacheManager;
+
 class GooTranslateClass implements GooTranslateServiceContract
 {
 
     private $client;
+    private $cache;
 
-    public function __construct(\GuzzleHttp\ClientInterface $client)
+    public function __construct(\GuzzleHttp\Client $client, CacheManager $cache, $log)
     {
         $this->client = $client;
+        $this->cache = $cache;
+        $this->logger = $log;
+
         $this->target('en');
     }
 
@@ -16,9 +22,7 @@ class GooTranslateClass implements GooTranslateServiceContract
     {
         try {
             $response = $this->client->get('languages', ['query' => array_merge(['target' => 'en'], $this->client->getConfig('query'))]);
-
             $data = json_decode($response->getBody()->getContents());
-
             return $data->data->languages;
         }
         catch (\Exception $e)
@@ -30,22 +34,46 @@ class GooTranslateClass implements GooTranslateServiceContract
     /**
      * @param $string
      */
-    public function translate($string, $target = null)
+    public function translate($string, $target = null, $source = null)
     {
         try {
             if($target) {
                 $this->target($target);
             }
 
-            $response = $this->client->get('', ['query' => array_merge($this->client->getConfig('query'), ['q' => $string, 'target' => $this->target])]);
+            $cacheKey = 'Jcorry\GooTranslate\\' . md5($string . $this->target);
 
-            $data = json_decode($response->getBody()->getContents());
+            if(! $this->cache->get($cacheKey, false)) {
+                // get it from the service and cache it
+                $response = $this->client->get('',
+                    [
+                        'query' => array_merge($this->client->getConfig('query'), ['q' => $string, 'target' => $this->target])
+                    ]
+                );
+
+                if($response->getStatusCode() == 200) {
+                    $data = json_decode($response->getBody()->getContents());
+                    $this->cache->forever($cacheKey, $data);
+                } else {
+                    $this->logger->error('Could not get response from Google Translate :' . $response->getStatusCode());
+                    $this->logger->error($response->getBody()->getContents());
+                }
+
+                $this->logger->info('looked up ' . $cacheKey . ' from service');
+            } else {
+                // if it's cached, return it from the cache
+                $data = $this->cache->get($cacheKey);
+                $this->logger->info('looked up ' . $cacheKey . ' from cache');
+            }
 
             return $data->data->translations;
         }
         catch(\Exception $e)
         {
-            return $e->getMessage();
+            // delete the cache
+            $this->cache->forget($cacheKey);
+            $this->logger->error($e->getMessage());
+            return false;
         }
     }
 
@@ -65,17 +93,6 @@ class GooTranslateClass implements GooTranslateServiceContract
         {
             return $e->getMessage();
         }
-    }
-
-    /**
-     * @param $string
-     * @param $lang
-     */
-    public function listTranslations($string, $lang)
-    {
-        $response = $this->service->translations->listTranslations($string, $lang);
-
-        return $response;
     }
 
     public function src($lang)

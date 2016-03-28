@@ -28,7 +28,9 @@ describe('GooTranslate', function(){
     });
 
     describe('methods', function(){
-        describe('languages', function(){});
+        describe('languages', function(){
+            
+        });
         describe('translate', function(){});
         describe('detect', function(){});
     });
