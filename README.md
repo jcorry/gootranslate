@@ -1,7 +1,7 @@
 # GooTranslate
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
-[![Software License]](LICENSE.md)
+[![Software License][ico-license]](LICENSE.md)
 [![Build Status][ico-travis]][link-travis]
 [![Quality Score][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
@@ -90,6 +90,7 @@ The DBAD License (DBAD). Please see [License File](LICENSE.md) for more informat
 [ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/Jcorry/GooTranslate.svg?style=flat-square
 [ico-code-quality]: https://img.shields.io/scrutinizer/g/Jcorry/GooTranslate.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/Jcorry/GooTranslate.svg?style=flat-square
+[ico-license]: https://img.shields.io/packagist/l/Jcorry/GooTranslate.svg?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/Jcorry/GooTranslate
 [link-travis]: https://travis-ci.org/jcorry/gootranslate
