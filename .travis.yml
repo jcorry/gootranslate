@@ -15,10 +15,10 @@ install:
 
     - composer create-project laravel/laravel laravel "5.1.*" --no-scripts
     - cd ./laravel
-    - composer require peridot-php/peridot
-    - composer require peridot-php/leo
-    - composer require phpspec/phpspec
-    - composer require peridot-php/peridot-watcher-plugin
+    #- composer require peridot-php/peridot
+    #- composer require peridot-php/leo
+    #- composer require phpspec/phpspec
+    #- composer require peridot-php/peridot-watcher-plugin
     - composer require jcorry/gootranslate:dev-master
 
 before_script:

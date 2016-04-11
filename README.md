@@ -92,7 +92,7 @@ The DBAD License (DBAD). Please see [License File](LICENSE.md) for more informat
 [ico-downloads]: https://img.shields.io/packagist/dt/Jcorry/GooTranslate.svg?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/Jcorry/GooTranslate
-[link-travis]: https://travis-ci.org/Jcorry/GooTranslate
+[link-travis]: https://travis-ci.org/jcorry/gootranslate
 [link-scrutinizer]: https://scrutinizer-ci.com/g/Jcorry/GooTranslate/code-structure
 [link-code-quality]: https://scrutinizer-ci.com/g/Jcorry/GooTranslate
 [link-downloads]: https://packagist.org/packages/Jcorry/GooTranslate
