@@ -29,4 +29,3 @@ script:
     - php artisan clear-compiled
     - php artisan optimize
     - phpunit --filter ./vendor/jcorry/gootranslate/tests
-    - ./vendor/bin/peridot ./vendor/jcorry/gootranslate/tests
