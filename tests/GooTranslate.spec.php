@@ -19,9 +19,13 @@ describe('GooTranslate', function(){
                 'query' => ['key' => env('GOOGLE_API_KEY')]
             ]);
 
+<<<<<<< HEAD
             $cacheManager = new \Illuminate\Cache\CacheManager();
 
             $this->cut = new \Jcorry\GooTranslate\GooTranslateClass($mock, $cacheManager);
+=======
+            $this->cut = new \Jcorry\GooTranslate\GooTranslateClass($mock);
+>>>>>>> 1080f219090ae6df45858198240101ff26c363e7
         });
 
         it("should accept a GuzzleHttp\\Client as it's single param", function(){

@@ -22,6 +22,7 @@ class GooTranslateMockClass implements GooTranslateServiceContract
      */
     public function __construct(\GuzzleHttp\Client $client, CacheManager $cache, $log)
     {
+
         $translation = GooTranslateTranslationResponse::class;
 
         $mock = new MockHandler([
@@ -73,6 +74,7 @@ class GooTranslateMockClass implements GooTranslateServiceContract
 
         return $this;
     }
+
 
 }
 

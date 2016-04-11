@@ -12,6 +12,7 @@ before_install:
     - composer self-update
 
 install:
+
     - composer create-project laravel/laravel laravel --no-scripts
     - cd ./laravel
     - composer require peridot-php/peridot

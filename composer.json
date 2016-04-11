@@ -35,6 +35,14 @@
             "Jcorry\\GooTranslate\\": "src"
         }
     },
+<<<<<<< HEAD
+=======
+    "autoload-dev": {
+        "psr-4": {
+            "Jcorry\\GooTranslate\\": "tests"
+        }
+    },
+>>>>>>> 1080f219090ae6df45858198240101ff26c363e7
     "scripts": {
         "test": "phpunit"
     },
