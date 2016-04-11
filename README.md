@@ -86,7 +86,7 @@ If you discover any security related issues, please email jcorry@gmail.com inste
 The DBAD License (DBAD). Please see [License File](LICENSE.md) for more information.
 
 [ico-version]: https://img.shields.io/packagist/v/Jcorry/GooTranslate.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/Jcorry/GooTranslate/master.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/jcorry/gootranslate/master.svg?style=flat-square
 [ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/Jcorry/GooTranslate.svg?style=flat-square
 [ico-code-quality]: https://img.shields.io/scrutinizer/g/Jcorry/GooTranslate.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/Jcorry/GooTranslate.svg?style=flat-square
