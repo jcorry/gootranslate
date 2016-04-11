@@ -1,0 +1,31 @@
+sudo: false
+language: php
+php: 
+    - '5.6'
+
+env:
+  global:
+    - setup=basic
+    - coverage=no
+
+before_install:
+    - composer self-update
+
+install:
+    - composer create-project laravel/laravel laravel --no-scripts
+    - cd ./laravel
+    - composer require peridot-php/peridot
+    - composer require peridot-php/leo
+    - composer require phpspec/phpspec
+    - composer require peridot-php/peridot-watcher-plugin
+    - composer require jcorry/gootranslate:dev-master
+
+before_script:
+    - export APP_ENV=testing
+    - export GOOGLE_API_KEY=XNj7t5upbFIqNSaS0de480YWckGb7136
+
+script:
+    - php artisan clear-compiled
+    - php artisan optimize
+    - phpunit --filter ./vendor/jcorry/gootranslate/tests
+    - ./vendor/bin/peridot ./vendor/jcorry/gootranslate/tests
