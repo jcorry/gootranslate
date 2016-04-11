@@ -6,13 +6,13 @@
         "Jcorry",
         "GooTranslate"
     ],
-    "homepage": "https://github.com/Jcorry/GooTranslate",
+    "homepage": "https://github.com/jcorry/gootranslate",
     "license": "DBAD",
     "authors": [
         {
             "name": "John Corry",
             "email": "jcorry@gmail.com",
-            "homepage": "https://github.com/Jcorry",
+            "homepage": "https://github.com/jcorry",
             "role": "Developer"
         }
     ],
